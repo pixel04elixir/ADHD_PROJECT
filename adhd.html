@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-
-.navbar {
+ .navbar {
   width: 100%;
-  background-color: #555;
+  background-color: darkslategray;
   overflow: auto;
 }
 
@@ -25,7 +24,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color:lightseagreen;
 }
 .dropdown {
   float: left;
@@ -46,7 +45,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: palevioletred;
 }
 
 /* Dropdown content (hidden by default) */
@@ -90,7 +89,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  height: 600px;
+  height: 400px;
   position: relative;
   margin: auto;
 }
@@ -127,8 +126,17 @@ img {vertical-align: middle;}
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: grey;
+  color:mintcream;
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:teal;
+   color: white;
+   text-align: center;
+   }
  </style>
 </head>
 <body>
@@ -137,12 +145,11 @@ img {vertical-align: middle;}
   <a class="active" href="#home"><i class="fa fa-fw fa-home"></i> Home</a>  
   <a href="#register"><i class="fa fa-fw fa-user"></i>Register</a>
   <a href="#login">Login</a>
-  <a href="#about_us">About Us</a>
   <a href="#donations">Donations</a>
   <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">About Us</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#contacets">Contacts</a>
+    <a href="#contacts">Contacts</a>
     <a href="#info">Information</a>
     <a href="#news">News</a>
   </div>
@@ -151,18 +158,33 @@ img {vertical-align: middle;}
  <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <img src="toddler-reading-book-1257105.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <img src="2copy.jpg" style="width:100%">
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
-  <img src="person-writing-on-pink-sticky-notes-3854816.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <img src="3copy.jpg" style="width:100%">
+  <div class="text"></div>
 </div>
 
 <div class="mySlides fade">
-  <img src="architecture-boys-brick-wall-bricks-551594.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <img src="4copy.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="5copy.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="6copy.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="7copy.jpg " style="width:100%">
+  <div class="text"></div>
 </div>
 
 </div>
@@ -171,7 +193,10 @@ img {vertical-align: middle;}
 <div style="text-align:center">
   <span class="dot"></span> 
   <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span>   
 </div>
 
 <script>
@@ -192,11 +217,14 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides,5000); // Change image every 2 seconds
+  setTimeout(showSlides,7000); // Change image every 2 seconds
 }
 </script>
 <div class="hero-text">
-<h1 style="font-size:50px">"To promote healthy mental image of someone."</h1>  
+<h1 style="font-size:50px">"To promote a healthy mental image of someone."</h1>  
 </div>
+<div class="footer">
+  <p>Copyright by @ADHD association</p>
+  </div>
 </body>
 </html> 

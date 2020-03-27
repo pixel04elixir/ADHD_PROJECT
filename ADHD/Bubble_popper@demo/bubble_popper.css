@@ -1,0 +1,124 @@
+html
+{
+box-sizing: border-box;
+}
+*,*::before,*::after{
+	
+box-sizing: inherit;
+}
+body, html {
+	height: 100%;
+	margin: 0;
+	padding:0;
+	}
+.container {
+  position: relative;
+ height:100%;
+  margin:0;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+.container .btn:hover {
+  background-color:none;
+}
+.container button{
+	font-family: Impact, Charcoal, sans-serif;
+padding: 15px 25px;
+  font-size: 75px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: deepskyblue;
+  background-color: LightCyan;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0 9px LightSkyBlue;
+ }
+ .container button:hover {background-color: deepskyblue;color:LightCyan; border: 2px solid GhostWhite;}
+
+.container button:active {
+  background-color: deepskyblue;
+  box-shadow: 0 10px darkcyan;
+  transform: translateY(10px);
+}
+.bubble {
+  -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+  height: 1000px;
+position: absolute;
+width: 1000px;
+}
+.bubble{
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+  
+  height: 1000px;
+  position: absolute;
+  width: 1000px;
+
+animation: bounce 3s cubic-bezier(.5,-.9,.6,1.9)forwards;
+transform: translate(-50%,-50%);
+transition:
+width .3s cubic-bezier(.7,-.6,.4,1.5),
+height .3s cubic-bezier(.7,-.6,.4,1.5),
+opacity .3s ease-out;
+
+}
+.is-popping{
+height:0;
+width:0;
+opacity:0;
+animation-name:none;
+}
+.color{
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+background-color:paleturquoise;
+  height: 155px;
+position: absolute;
+width: 155px;}
+
+@keyframes bounce{
+0%{
+  height:0px;
+  width:0px;
+}
+99.9%{
+  height:150px;
+  width:150px;
+}
+  100%{
+    height:0px;
+    width:0px;
+}
+
+}

@@ -7,15 +7,28 @@
  <link href="bubble_popper.css" rel="stylesheet">
  </head>
  <body>
+ <audio id="myAudio">
+  <source src="whatever_you_want.wav" type="audio/wav">
+   </audio>
+
     <div class="container">
-  <img src="top-view-photography-of-blue-pool-tiles-347143.jpg" alt="Snow">
+  <img src="top-view-photography-of-blue-pool-tiles-347143.jpg" alt="Snow" />
   <div class="btn">
-    <button id="play">START</button>
+    <button id="play">START GAME</button>
+  </div>
+  <div class="modal" id="myModal">
+  <div class="modal-content">
+    <h1>RESULT<h1>
+	<h3>Bubbles Popped : <span id="myBubbles"></span> </h3>
+	<h3>Average Time : <span id="myTotalTime"></span> sec</h3> 
+	<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+  </div>
   </div>
 </div>
  
-  
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
  <script src="bp.js"></script>
  </body>
  </html>
